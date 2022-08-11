@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clases e identificadores </title>
+  <style>
+       /*este es el codigo que corresponde a la regla general*/
+      *{
+        font-family: Arial Narrow;   /*tipo de letra de toda la pagina*/
+        /*background: #faf6ea;*/         /* afecta el color de fondo de la pagina*/ 
+      }
+      h1#titulo_principal
+      {
+        font-family: PlainGermanica; /*cambia el tipo de letra del titulo principal*/
+        text-align: center;          /*alineacion del texto al centro*/
+        font-size: 40pt;             /* cambia el tamaño a 40 pt*/
+      }
+      h2#subtitulo
+      {
+        text-align: center;          /*alineacion del texto al centro*/
+        font-size: 20pt;             /* cambia el tamaño a 20 pt*/ 
+      }
+      h5#fecha
+      {
+        margin: 0px;                 /*margen de cero pixeles*/
+        text-align: right;           /*alineacion del texto a la derecha*/
+      }
+      article.destacado
+      {
+        text-align: justify;         /*alineacion del texto justificado*/
+        margin: 0px 50px 5px 50px;   /*margen de cero, 50, 5, 50 pixeles de la caja*/
+        padding: 10px;               /*genera espacio alrededor de la caja*/
+        background: #ccc;            /*cambia el color de la caja*/
+        border-radius: 10px;         /*pone los bordes de la caja redondos*/
+      }
+      h3.titulo_destacado
+      {
+        margin: 0px;                 /*margen de cero pixeles*/
+        text-align: center;          /*alineacion del texto al centro*/ 
+        font-size: 15pt;             /* cambia el tamaño a 15 pt*/ 
+      }
+      p.destacado_extracto
+      {
+        font-family: Arial Narrow;   /*cambia el tipo de letra*/
+        font-size: 12pt;             /* cambia el tamaño a 12 pt*/    
+      }
+      h3.titulo_noticia
+      {
+        text-align: center;          /*alineacion del texto al centro*/
+      }
+      article.noticia            
+      /*para colocar las noticias una al lado de otra*/
+      {
+        display: inline-block;       /*especifica como se muestran las noticias*/
+        text-align: justify;         /*alineacion del texto justificado*/
+        vertical-align: top;         /*los pone en alineacion vertical en la parte de arriba*/
+        width: 250px;                /* establece el ancho de cada noticia*/
+        height: 150px;               /* establece la altura de cada noticia*/
+        padding:30px;                /*genera espacio alrededor de las noticias*/
+        margin: 15px;                /*margen de quince pixeles*/
+      }
+
+    </style>
+</head>
+<body>
+  <header>
+      <h1 id="titulo_principal">The EMA Time</h1>
+      <h2 id="subtitulo">Las noticias al momento que ocurren</h2>
+      <h5 id="fecha">Fecha: 20 de abril del 2020</h5>
+  </header>
+<hr>
+ <section>
+     <article class="destacado">
+        <h3 class="titulo_destacado">Las clases virtuales en la EMA</h3>
+          <p class="destacado_extracto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab rerum voluptate quod, error eum vitae molestiae, aperiam magni voluptates dolorem. Inventore asperiores vel eligendi voluptatem laborum nobis, distinctio amet modi?</p>
+     </article>
+     <article class="noticia">
+        <h3 class="titulo_noticia">Las videoconferencias con Meet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolores voluptates facilis eum quisquam aspernatur maiores provident fuga  mollitia atque autem quia re</p>
+     </article>
+     <article class="noticia">
+        <h3 class="titulo_noticia">Las capacidad para videoconferencia</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipis. Porro dolquollitia atque autem quia repellendus, vel corporis architecto assumenda, harum deserunt accusamus.</p>
+     </article>
+     <article class="noticia">
+        <h3 class="titulo_noticia">La gratuidad de Google Meet</h3>
+          <p>Lorem ipsum dolor sit afuga mollitia atque autem quia repellendus, vel corporis architecto assumenda, harum deserunt accusamus.</p>
+     </article>
+ </section>
+</body>
+</html>
